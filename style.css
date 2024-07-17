@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+}
+/* Nav and Buttons styles */
+nav{
+    align-items: center;
+    background-color: #333;
+    padding: 2%;
+    margin: 0;
+}
+nav .navbtn {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: #333 0px 0px 16px;
+}
+
+nav a:hover{
+    transition: 100ms;
+    transition-timing-function: ease-in;
+    background-color: #ddd;
+    color: black;
+    font-weight: 500;
+}
+
+/* The about section */
+.section1{
+    height: 100vh;max-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(168, 168, 168);
+}
+.section1 h1{
+    margin-block: 30px;
+}
+
+.about-container p {
+    width: 60vh;
+    overflow: hidden;
+}
+
+.about-container img {
+    width: 40vh;max-width: 40vh;
+    height: 35vh;max-width: 35vh;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 10vh;
+}
+
+/* The Work Section */
+.section2{
+    height: 100vh;max-height: 100vh;
+    background-color: #69779b
+}
+.section2 h1{
+    color:#639cd9;
+    padding: 1%;
+    text-shadow: #220e24 3px 3px 12px;
+    font-style: italic;
+}
+.work-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 10vh;
+    margin-block: 2%;
+    overflow: hidden;
+}
+.work-container p{
+    width: 60vh;
+    overflow: hidden;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+}
+
+.work-container table{
+    width: 40vh;max-width: 40vh;
+    height: 35vh;max-width: 35vh;
+}
+
+td{
+    transition: 300ms;
+    background-color:#220e24;
+    padding:18px;
+    border-radius:20px;
+    color:#639cd9;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    font-size: 32px;
+}
+
+td:hover{
+    transition: 100ms;
+    transition-timing-function: ease-in;
+    background-color: #ddd;
+    color: black;
+}
+
+/* This is the resume section */
+.section3{
+    height: 100vh;max-height: 100vh;
+    background-color: #8ecccc;
+    overflow: hidden;
+}
+
+.section3 h1{
+    font-style: oblique;
+    padding: 1%;
+    color: #3a4042;
+    text-shadow: #042455 0px 0px 3px;
+    font-size: 48px;
+}
+
+.resume-container{
+    align-items: center;
+    justify-content: center;
+    margin-inline: 30vh;
+    font-size: 20px;
+}
+
+.resume-container p{
+    font-size: 20px;
+}
+
+/* This is the contact section */
+.contact{
+    height: 50vh;max-height: 100vh;
+    background-color: #2F4A76;
+    overflow: hidden;
+    padding-block: 5%;
+}
+
+.contact-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 30vh;
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+.contact img{
+    border-radius: 20px;
+    box-shadow: #05040b 0px 0px 12px;
+    width: 40vh;
+    height: 20vh;
+}
+
+form{
+    background-color: #639cd9;
+    padding: 4%;
+    border-radius: 12px;
+    margin: 2%;
+    box-shadow: #05040b 0px 0px 12px;
+    width:40vh;
+    height: 30vh;
+}
+
+input{
+    margin: 2px;
+    padding: 1%;
+    border: transparent;
+    border-radius: 36px;
+}
+
+#btn{
+    transition: 400ms;
+    width: 200px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: black 0px 0px 12px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e4e4f7;
+    background-color:#4336b5;
+}
+
+#btn:hover{
+    transition: 400ms;
+    background-color:#b6aefa;
+    color: #042455;
+}
+
+textarea{
+    width: 300px;
+    height: 150px;
+}
+
+footer{
+    align-items: center;
+    background-color: #333;
+    padding: 2%;
+    margin: 0;
+    
+}
+footer aside{
+    margin-inline: 40%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+#links{
+    padding: 14px 16px;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: #333 0px 0px 16px;
+
+}.link:hover{
+    transition: 100ms;
+    transition-timing-function: ease-in;
+    color: black;
+    font-weight: 500;
+}

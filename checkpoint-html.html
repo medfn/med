@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML fundumentals | Checkpoint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,70 +17,71 @@
     <header>
         <a id="header">
             <nav>
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Work">Work</a>
-                <a href="#Resume">Resume</a>
-                <a href="#Contact">Contact</a>
+                <a class=navbtn href="#Home">Home</a>
+                <a class=navbtn href="#About">About</a>
+                <a class=navbtn href="#Work">Work</a>
+                <a class=navbtn href="#Resume">Resume</a>
+                <a class=navbtn href="#Contact">Contact</a>
             </nav>
     </header>
     <!--This is the about me section with some place holder text-->
-    <article><a id="About">
-            <center>
-                <h1>About</h1>
-            </center>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Beatae esse laborum accusantium voluptatem
-                quae dolore quidem provident accusamus earum
-                adipisci sunt perferendis, laboriosam sapiente,
-                qui tempore enim itaque illo necessitatibus!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Beatae esse laborum accusantium voluptatem
-                quae dolore quidem provident accusamus earum
-                adipisci sunt perferendis, laboriosam sapiente,
-                qui tempore enim itaque illo necessitatibus!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Beatae esse laborum accusantium voluptatem
-                quae dolore quidem provident accusamus earum
-                adipisci sunt perferendis, laboriosam sapiente,
-                qui tempore enim itaque illo necessitatibus!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Beatae esse laborum accusantium voluptatem
-                quae dolore quidem provident accusamus earum
-                adipisci sunt perferendis, laboriosam sapiente,
-                qui tempore enim itaque illo necessitatibus!</p>
-            <center><img src="Default_pfp.svg"></center>
+    <article class="section1"><a id="About">
+            <h1>About</h1>
+            <div class="about-container">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae esse laborum accusantium voluptatem
+                    quae dolore quidem provident accusamus earum
+                    adipisci sunt perferendis, laboriosam sapiente,
+                    qui tempore enim itaque illo necessitatibus!</br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae esse laborum accusantium voluptatem
+                    quae dolore quidem provident accusamus earum
+                    adipisci sunt perferendis, laboriosam sapiente,
+                    qui tempore enim itaque illo necessitatibus!</br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae esse laborum accusantium voluptatem
+                    quae dolore quidem provident accusamus earum
+                    adipisci sunt perferendis, laboriosam sapiente,
+                    qui tempore enim itaque illo necessitatibus!</br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae esse laborum accusantium voluptatem
+                    quae dolore quidem provident accusamus earum
+                    adipisci sunt perferendis, laboriosam sapiente,
+                    qui tempore enim itaque illo necessitatibus!</p>
+                <img src="Default_pfp.svg">
+            </div>
     </article>
     <!--This is the works section-->
-    <section><a id="Work">
-            <center>
-                <h1>Work</h1>
-            </center>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit, illum pariatur.
-                Cupiditate eligendi qui aperiam obcaecati sequi
-                amet reprehenderit nostrum ipsum voluptatibus blanditiis
-                nam vitae asperiores,
-                omnis enim consectetur itaque!</p>
-            <!--These are some placeholders of services provided-->
-            <ul type="square">
-                <li>work 1</li>
-                <li>work 2</li>
-                <li>work 3</li>
-                <li>work 4</li>
-            </ul>
+    <section class="section2"><a id="Work">
+            <h1>Work</h1>
+            <div class="work-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit, illum pariatur.
+                    Cupiditate eligendi qui aperiam obcaecati sequi
+                    amet reprehenderit nostrum ipsum voluptatibus blanditiis
+                    nam vitae asperiores,
+                    omnis enim consectetur itaque!</p>
+                <!--These are some placeholders of services provided-->
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </div>
             <center><video width="700" controls muted>
                     <source src="working.mp4" type="video/mp4">
-                </video>
-            </center>
+                </video></center>
     </section>
     <!--This is the resume section-->
-    <article><a id="Resume">
-            <center>
-                <h1>Resume</h1>
-            </center>
+    <article class="section3"><a id="Resume">
+            <h1>Resume</h1>
             <!--this resume is taken from https://zety.com/blog/plain-text-resume-example-->
-            <ol type="I">
+            <ol class="resume-container" type="I">
                 <li>
                     <h2>PROFESSIONAL SUMMARY</h2>
                     Experienced financial analyst with excellent analytical
@@ -141,33 +147,29 @@
                     </ul>
                 </li>
             </ol>
-
     </article>
     <!--This is the "contact us" section-->
-    <section><a id="Contact">
-            <center>
-                <h1>Contact</h1>
-            </center>
-            <form>
-                Name <input id="name" type="text" placeholder="Your Name"><br>
-                Email <input id="email" type="text" placeholder="Your Email"><br>
-                <label>Write us a message</label><br>
-                <textarea name="message" cols="30" rows="5"></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-            <center><img src="contact.jpg" height="200"></center>
+    <section class="contact"><a id="Contact">
+            <h1>Contact</h1>
+            <div class="contact-container">
+                <form>
+                    Name <input id="name" type="text" placeholder="Your Name"><br>
+                    Email <input id="email" type="text" placeholder="Your Email"><br>
+                    <label>Write us a message</label><br>
+                    <textarea name="message" cols="30" rows="5"></textarea><br>
+                    <button id="btn" type="submit">Submit</button>
+                </form>
+                <img src="contact.jpg" height="200">
+            </div>
     </section>
-    <br>
-    <br>
-    <br>
     <!--footer, nothing else to put here-->
     <footer>
-        <aside>Links
-            <div>
+        <aside>Links:
+            <div id="links">
                 <ul>
-                    <li><a href="https://twitter.com">Twitter</a></li>
-                    <li><a href="https://youtube.com">Youtube</a></li>
-                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a class="link" href="https://twitter.com">Twitter</a></li>
+                    <li><a class="link" href="https://youtube.com">Youtube</a></li>
+                    <li><a class="link" href="https://facebook.com">Facebook</a></li>
                 </ul>
             </div>
         </aside>
